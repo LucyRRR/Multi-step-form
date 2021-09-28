@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import './Property.css'
 
 import { Container, Typography, Button, FormGroup, FormControlLabel, Checkbox, FormControl, FormLabel, RadioGroup, Radio } from '@material-ui/core'
 
@@ -47,7 +47,7 @@ const PropertyInfo = ({ nextStep, handleChange }) => {
         <Typography component="h1" variant="h5">
           Vyplnte udaje o nemovitosti
         </Typography>
-        <FormGroup>
+        <FormGroup className="property">
           <FormControlLabel control={<Checkbox onChange={handleChange("byt")} />} label="byt" />
           <FormControlLabel control={<Checkbox onChange={handleChange("dum")} />} label="dum" />
           <FormControlLabel control={<Checkbox onChange={handleChange("pozemek")} />} label="pozemek" />

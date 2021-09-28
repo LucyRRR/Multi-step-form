@@ -1,14 +1,14 @@
 import './App.css';
 import React from "react";
 
-import Search from "./Components/Search";
+import Form from "./Components/Form";
 
 
 function App() {
   return (
     <div className="App">
       <h1>Reality project</h1>
-      <Search />
+      <Form />
     </div>
   );
 }
